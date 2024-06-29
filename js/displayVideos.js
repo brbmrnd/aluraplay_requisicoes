@@ -1,7 +1,7 @@
 import { conectApi } from "./conectApi.js";
 const listVideo = document.querySelector('[data-list]');
 
-function addCard(title, description, url, image) {
+export default function addCard(title, description, url, image) {
     const video = document.createElement("li");
     video.className = "videos__item";
     video.innerHTML = `<iframe width="100%" height="72%" src="${url}"

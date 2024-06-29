@@ -1,7 +1,7 @@
 import { conectApi } from "./conectApi.js";
 const form = document.querySelector("[data-form]");
 
-async function addVideo(event) {
+async function addVideos(event) {
     event.preventDefault();
 
     const url = document.querySelector("[data-url]").value;
@@ -13,4 +13,4 @@ async function addVideo(event) {
     window.location.href = "../pages/envio-concluido.html"
     }
 
-form.addEventListener("submit", event => addVideo(event));
+form.addEventListener("submit", event => addVideos(event));
