@@ -5,6 +5,6 @@ async function videoList() {
     return convertedConection;
 }
 
-export const conectionApi = {
+export const conectApi = {
     videoList
 }
