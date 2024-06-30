@@ -16,8 +16,11 @@ async function addVideo(title, description, url, image) {
                 url: url,
                 imagem: image
             })
-
         });
+
+    if (!conection.ok) {
+        throw new Error("Não foi possível enviar o vídeo.")
+    }
     const convertedConection = conection.json();
     return convertedConection;
 }
